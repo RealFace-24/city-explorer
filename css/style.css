@@ -1,0 +1,215 @@
+/* Reset si setari de baza */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f8fafc;
+}
+
+/* 1. Antet stilizat cu Flexbox */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 36px;
+  background-color: #1a365d;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #63b3ed;
+}
+
+/* Container continut */
+.container {
+  max-width: 1050px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #1a365d;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 8px;
+}
+
+/* 2. Destinatii organizate cu CSS Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  color: #2b6cb0;
+}
+
+.card .country {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.card .description {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.card .duration {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+/* Efect hover pe carduri */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Destinatie evidentiata (featured) */
+.card.featured {
+  position: relative;
+  border: 2px solid #3182ce;
+  background-color: #ebf8ff;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 14px;
+  background-color: #3182ce;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 3. Formularul de planificare */
+.plan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f7fafc;
+  transition: border-color 0.2s ease, outline 0.2s ease;
+}
+
+/* Stare focus pe inputuri */
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #3182ce;
+  border-color: #3182ce;
+  background-color: #ffffff;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  padding: 12px 24px;
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2b6cb0;
+}
+
+/* 4. Recomandari */
+.recommendations-list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendations-list li {
+  color: #4a5568;
+}
+
+/* 5. Subsol */
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  background-color: #edf2f7;
+  color: #718096;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
