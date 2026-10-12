@@ -1,123 +1,14 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City Explorer</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Antet si navigare -->
-  <header class="site-header">
-    <div class="logo">
-      <h1>City Explorer</h1>
-    </div>
-    <nav class="nav-menu">
-      <a href="#destinatii">Destinatii</a>
-      <a href="#planifica">Planifica</a>
-      <a href="#recomandari">Recomandari</a>
-    </nav>
-  </header>
-
-  <!-- Continut principal -->
-  <main class="container">
-
-    <!-- Sectiunea Destinatii -->
-    <section id="destinatii" class="section">
-      <h2>Destinatii populare</h2>
-      <div class="cards-grid">
-        
-        <!-- Card 1: Recomandat (featured) -->
-        <article class="card featured">
-          <span class="badge">Recomandat</span>
-          <h3>Roma</h3>
-          <p class="country"><strong>Tara:</strong> Italia</p>
-          <p class="description">Orasul Etern fascineaza prin monumentele sale istorice, Colosseumul grandios si gastronomia autentica.</p>
-          <p class="duration"><strong>Durata recomandata:</strong> 4 zile</p>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card">
-          <h3>Lisabona</h3>
-          <p class="country"><strong>Tara:</strong> Portugalia</p>
-          <p class="description">Un oras fermecator pe sapte coline, faimos pentru tramvaiele galbene, muzica fado si cartierul Alfama.</p>
-          <p class="duration"><strong>Durata recomandata:</strong> 3 zile</p>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="card">
-          <h3>Praga</h3>
-          <p class="country"><strong>Tara:</strong> Republica Ceha</p>
-          <p class="description">Capitala boema impresioneaza prin Castelul Praga, Podul Carol si arhitectura gotica spectaculoasa.</p>
-          <p class="duration"><strong>Durata recomandata:</strong> 3 zile</p>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="card">
-          <h3>Barcelona</h3>
-          <p class="country"><strong>Tara:</strong> Spania</p>
-          <p class="description">Metropola vibranta pe malul Mediteranei, definita de capodoperele lui Gaudi si plajele pline de viata.</p>
-          <p class="duration"><strong>Durata recomandata:</strong> 4 zile</p>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="card">
-          <h3>Viena</h3>
-          <p class="country"><strong>Tara:</strong> Austria</p>
-          <p class="description">Centru al muzicii clasice si al elegantei imperiale, cu palate fastuoase si cafenele istorice primitoare.</p>
-          <p class="duration"><strong>Durata recomandata:</strong> 3 zile</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Sectiunea Planifica -->
-    <section id="planifica" class="section">
-      <h2>Planifica excursia</h2>
-      <form class="plan-form" action="#" method="get">
-        <div class="form-group">
-          <label for="name">Nume complet:</label>
-          <input type="text" id="name" name="name" placeholder="Ex: Popescu Andrei" required>
-        </div>
-
-        <div class="form-group">
-          <label for="destination">Destinatie:</label>
-          <select id="destination" name="destination" required>
-            <option value="">Alege o destinatie...</option>
-            <option value="Roma">Roma</option>
-            <option value="Lisabona">Lisabona</option>
-            <option value="Praga">Praga</option>
-            <option value="Barcelona">Barcelona</option>
-            <option value="Viena">Viena</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="days">Numar de zile:</label>
-          <input type="number" id="days" name="days" min="1" max="30" placeholder="Ex: 4" required>
-        </div>
-
-        <button type="submit" class="submit-btn">Planifica excursia</button>
-      </form>
-    </section>
-
-    <!-- Sectiunea Recomandari -->
-    <section id="recomandari" class="section">
-      <h2>Recomandari de calatorie</h2>
-      <ul class="recommendations-list">
-        <li><strong>Rezerva biletele din timp:</strong> Pentru atractiile populare (de exemplu Colosseum sau Sagrada Familia), cumpara biletele online pentru a evita cozile mari.</li>
-        <li><strong>Exploreaza la pas:</strong> Cele mai autentice restaurante locale si stradute pitoresti se descopera plimbandu-te in afara arterelor ultra-aglomerate.</li>
-        <li><strong>Foloseste transportul in comun:</strong> Majoritatea oraselor europene ofera abonamente de transport pe 24 sau 72 de ore, ideale pentru turisti.</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <!-- Subsol -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Budoi Mihai Alexandru. Toate drepturile rezervate.</p>
-  </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Explorer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+   
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
